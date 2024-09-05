@@ -1,0 +1,10 @@
+---
+- name: Update cache
+  apt:
+    update_cache: yes
+    cache_valid_time: 3600
+
+- name: Install Apache for Debian-based systems
+  apt:
+    name: "{{ apache_package }}"
+    state: present

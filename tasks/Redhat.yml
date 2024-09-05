@@ -1,0 +1,6 @@
+---
+- name: Install Apache for RedHat-based systems
+  yum:
+    name: "{{ apache_package }}"
+    state: present
+    enablerepo: true
